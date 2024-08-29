@@ -1,0 +1,154 @@
+:root{
+    --darkBlue:#05141b;
+    --softBlue: #0a1926;
+    --mBlue: #223543;
+    --gray: #495a6a;
+    --graySoft: #95a3a6;
+    --grayP: #bcc5c8;
+    --white: #ccd0cf;
+    --complete: #1a1919;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./assets/img/night21.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 100vh; 
+    justify-content: center;
+    align-items: center;
+    font-family: "Nunito", sans-serif;
+}
+
+.container{
+    background: linear-gradient(to bottom, var(--gray), var(--gray),var(--darkBlue));
+    margin-left: 20px;
+    width: 25rem;
+    height: 40rem;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+h1{
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 1;
+    color: var(--white);
+    text-align: start;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.modules{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    color: var(--grayP);
+}
+
+span{
+    font-weight: 600;
+}
+.agregar-tarea{
+    width: 20rem;
+    background-color: var(--graySoft);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.agregar-tarea input{
+    background: transparent;
+    border: transparent;
+    padding: 15px;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+.agregar-tarea i{
+    font-size: 20px;
+    color: var(--softBlue);
+}
+.fa-square-plus{
+    position: relative;
+    left: -15px;
+    cursor: pointer;
+}
+
+.seccion-tarea {
+    border: 1px outset var(--grayP);
+    border-radius: 10px;
+    width: 21rem;
+    height: 40rem;
+    padding: 20px;
+    position: relative;
+    
+}
+
+.seccion-tarea h3 {
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 1;
+    color: var(--white);
+    margin: 0;
+    position: absolute;
+    top: -10px; 
+    right: 10px; 
+    background-color: #4e626b18;
+    backdrop-filter: blur(20px);
+    padding: 0 5px;
+}
+
+.seccion-tarea li{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 7px;
+    backdrop-filter: blur(30px);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255 , 0));
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+
+.seccion-tarea li:hover{
+    box-shadow: 0 4px 20px 0 rgba(118, 113, 113, 0.212);
+}
+
+.seccion-tarea i{
+    font-size: 21px;
+    color: var(--graySoft);
+    cursor: pointer;
+}  
+.seccion-tarea i:hover{
+    color: var(--grayP);
+}
+
+.seccion-tarea >ul p{
+    color: var(--white);
+    text-transform: capitalize;
+}
+
+.complete{
+    color: #05141b !important;
+    text-decoration: line-through;
+    text-transform: none;
+}
+
+
